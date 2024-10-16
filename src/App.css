@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Nunito", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 
     --s: 200px;
     /* control the size */
@@ -41,6 +41,8 @@ div.cajaPrincipal {
     border-radius: 10px;
     padding: 40px;
     border: 1px solid beige;
+    box-sizing: border-box;
+    margin: 50px 0;
 
     nav.caja1 {
         background-color: gold;
