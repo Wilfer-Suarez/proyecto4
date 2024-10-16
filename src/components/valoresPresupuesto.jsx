@@ -14,9 +14,9 @@ export default function ValoresPresupuesto( {datoPresupuesto, suscripcionComplet
     return (
         <>
             <div className="caja21">
-                <p className="presupuesto">Presupuesto: {datoPresupuesto} $</p>
-                <p className="presupuesto">Disponible: {datoPresupuesto - gastado} $</p>
-                <p className="presupuesto">Gastado: {gastado} $</p>
+                <div className="presupuesto">Presupuesto: <p>{datoPresupuesto} $</p></div>
+                <div className="presupuesto">Disponible: <p>{datoPresupuesto - gastado} $</p></div>
+                <div className="presupuesto">Gastado: <p>{gastado} $</p></div>
             </div>
         </>
     )

@@ -132,14 +132,25 @@ div.cajaPrincipal {
             flex-direction: column;
             padding: 0px 50px 0px 0px;
 
-            p.presupuesto {
+            div.presupuesto {
                 background-color: beige;
                 border-radius: 5px;
                 margin-bottom: 10px;
-                text-align: end;
-                padding: 12px 10px 5px 10px;
-                height: 30px;
-                width: 150px;
+                height: 40px;
+                min-width: 170px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding: 0px 0px 0px 5px;
+
+                p {
+                    height: 40px;
+                    min-width: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 7px;
+                }
             }
         }
 
@@ -228,7 +239,6 @@ div.cajaPrincipal {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px;
         flex-direction: column;
 
         div.caja41 {
@@ -258,9 +268,13 @@ div.cajaPrincipal {
                 border: 1px solid gold;
                 background-color: #fff;
                 border-radius: 5px;
-                text-align: center;
-                padding: 13px 10px 5px 10px;
                 min-width: 40px;
+                height: 50px;
+                margin: 15px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 10px;
             }
 
             button {
