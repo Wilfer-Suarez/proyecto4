@@ -16,7 +16,7 @@ export default function AgregarPresupuesto({ setValorPresupuesto, valorPresupues
 
         setDatoPresupuesto(Number(valorPresupuesto));
         setMostrar(true);
-    };
+};
 
     return (
         <>

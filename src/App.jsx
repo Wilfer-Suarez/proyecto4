@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import Suscripciones from './components/suscripciones'
-import AgregarPresupuesto from './components/agregarPresupuesto'
+import { useState } from 'react';
+import Suscripciones from './components/suscripciones';
+import AgregarPresupuesto from './components/agregarPresupuesto';
 import ListaSuscripciones from './components/listaSuscripciones';
 
 function App() {
@@ -17,6 +17,9 @@ function App() {
     setSuscripcionCompleta(nuevaLista);
   }
 
+  const cajaStyle = {
+    width: mostrar ? '50vw' : '25vw',
+  };
   const mostrarPresupuesto = mostrar
     ? <Suscripciones
       datoPresupuesto={datoPresupuesto}
@@ -40,7 +43,7 @@ function App() {
 
   return (
     <>
-      <div className="cajaPrincipal">
+      <div className="cajaPrincipal" style={cajaStyle}>
         <nav className="caja1">
           <h1>Medidor Suscripciones</h1>
         </nav>

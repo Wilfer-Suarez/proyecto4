@@ -35,28 +35,31 @@ body {
 div.cajaPrincipal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    box-sizing: border-box;
-    min-width: 100px;
-    min-height: 100px;
-    margin: 50px 0;
-    padding: 40px;
+    /* box-sizing: border-box; */
+    width: 25vw;
+    height: 35vh;
+    /* margin: 50px 0; */
+    /* padding: 40px; */
     background-color: #DAA520;
     border: 1px solid beige;
     border-radius: 10px;
+    overflow: hidden;
+    transition: width 0.3s ease;
 
     nav.caja1 {
-        display: flex;
+        /* display: flex;
         justify-content: center;
         align-items: center;
-        box-sizing: border-box;
-        width: 350px;
-        height: 50px;
-        margin: 0px 0px 30px 0px;
+        box-sizing: border-box; */
+        width: 20vw;
+        height: 4vh;
+        margin: 0 0 1vh 0;
         background-color: gold;
         border: 1px solid #000;
         border-radius: 10px;
+        box-sizing: border-box;
 
         h1 {
             margin: 0;
@@ -65,19 +68,19 @@ div.cajaPrincipal {
     }
 
     div.agregarPresupuesto {
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 200px;
+        align-items: center; */
+        width: 25vw;
+        height: 30vh;
 
         form.agregarPresupuesto1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 250px;
-            min-height: 200px;
+            width: 25vw;
+            height: 30vh;
             background-color: beige;
             border-radius: 10px;
 
@@ -125,21 +128,23 @@ div.cajaPrincipal {
         justify-content: space-around;
         align-items: center;
         box-sizing: border-box;
-        min-height: 200px;
+        width: 50vw;
+        height: 30vh;
 
         div.caja21 {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 200px;
-            padding: 0px 50px 0px 0px;
+            width: 25vw;
+            height: 30vh;
+            /* padding: 0px 50px 0px 0px; */
 
             div.presupuesto {
                 display: flex;
                 justify-content: end;
                 align-items: center;
-                min-width: 170px;
+                width: 170px;
                 height: 40px;
                 margin-bottom: 10px;
                 padding: 0px 0px 0px 5px;
@@ -150,7 +155,7 @@ div.cajaPrincipal {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    min-width: 50px;
+                    width: 50px;
                     height: 40px;
                     padding: 0 7px;
                 }
@@ -162,8 +167,8 @@ div.cajaPrincipal {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-width: 250px;
-            min-height: 200px;
+            width: 25vw;
+            height: 30vh;
             background-color: beige;
             border-radius: 10px;
 
@@ -219,7 +224,7 @@ div.cajaPrincipal {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 100px;
+        width: 100px;
         height: 60px;
 
         h3 {
@@ -238,8 +243,8 @@ div.cajaPrincipal {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 100px;
-        min-height: 80px;
+        width: 100px;
+        height: 80px;
 
         div.caja41 {
             justify-items: center;
@@ -268,7 +273,7 @@ div.cajaPrincipal {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-width: 40px;
+                width: 40px;
                 height: 50px;
                 margin: 15px 0px;
                 padding: 0 10px;
