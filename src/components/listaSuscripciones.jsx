@@ -24,7 +24,6 @@ export default function ListaSuscripciones({ suscripcionCompleta, eliminarSuscri
                         </div>
                     );
                 })}
-
             </footer>
         </>
     )

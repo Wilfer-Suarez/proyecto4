@@ -16,9 +16,13 @@ function App() {
     const nuevaLista = suscripcionCompleta.filter(rey => rey.id != id);
     setSuscripcionCompleta(nuevaLista);
   }
-
+// recordar solo usar px o rem y aca se actualiza los valores osea no importa lo que tenga en css
+// se activar cuando se activa la funcion mostrar y se activa cada vez que se agrega suscripcionCompleta.length
   const cajaStyle = {
-    width: mostrar ? '50vw' : '25vw',
+    width: mostrar ? '540px' : '340px',
+    height: `${320 + suscripcionCompleta.length * 90}px`,
+    paddingTop: suscripcionCompleta.length > 0 ? '10px' : '25px',
+    // El > 0 verifica si el arreglo tiene elementos o cambios en el id
   };
   const mostrarPresupuesto = mostrar
     ? <Suscripciones
@@ -43,15 +47,16 @@ function App() {
 
   return (
     <>
-      <div className="cajaPrincipal" style={cajaStyle}>
-        <nav className="caja1">
-          <h1>Medidor Suscripciones</h1>
-        </nav>
+        <div className="cajaPrincipal" style={cajaStyle}>
+        {/* <div className="cajaPrincipal" > */}
+          <nav className="caja1">
+            <h1>Medidor Suscripciones</h1>
+          </nav>
 
-        {mostrarPresupuesto}
+          {mostrarPresupuesto}
 
-        {mostrarSuscripcion}
-      </div>
+          {mostrarSuscripcion}
+        </div>
     </>
   )
 }
